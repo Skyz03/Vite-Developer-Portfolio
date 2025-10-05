@@ -34,9 +34,9 @@ h3 {
   --color-white: #FFFFFF;
 
   /* Light mode mappings */
-  --color-background: var(--color-white);
-  --color-foreground: var(--color-black);
-  --color-card: var(--color-white);
+  --color-background: var(--color-black);
+  --color-foreground: var(--color-white);
+  --color-card: var(--color-black);
   --color-card-foreground: var(--color-black);
   --color-popover: var(--color-white);
   --color-popover-foreground: var(--color-black);
@@ -113,5 +113,9 @@ h3 {
 
   body {
     @apply bg-background text-foreground;
+  }
+
+  .contact-button {
+    @apply text-sm tracking-widest border-b-2 border-accent pb-3 uppercase font-bold
   }
 }

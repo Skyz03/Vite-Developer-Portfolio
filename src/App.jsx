@@ -4,11 +4,11 @@ import Projects from "./components/Projects";
 
 function App() {
   return (
-    <>
+    <div className="bg-background">
       <Hero />
       <Skills />
       <Projects />
-    </>
+    </div>
   );
 }
 
