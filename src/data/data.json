@@ -2,31 +2,38 @@
   {
     "title": "Design Portfolio",
     "tags": ["HTML", "CSS"],
-    "image": "/images/thumbnail-project-1-large.webp"
+    "largeImage": "/images/thumbnail-project-1-large.webp",
+    "smallImage": "/images/thumbnail-project-1-small.webp"
   },
   {
     "title": "E-Learning Landing Page",
     "tags": ["HTML", "CSS"],
-    "image": "/images/thumbnail-project-2-large.webp"
+    "largeImage": "/images/thumbnail-project-2-large.webp",
+    "smallImage": "/images/thumbnail-project-2-small.webp"
+    
   },
   {
     "title": "Todo Web App",
     "tags": ["HTML", "CSS", "JavaScript"],
-    "image": "/images/thumbnail-project-3-large.webp"
+    "largeImage": "/images/thumbnail-project-3-large.webp",
+    "smallImage": "/images/thumbnail-project-3-small.webp"
   },
   {
     "title": "Entertainment Web App",
     "tags": ["HTML", "CSS", "JavaScript"],
-    "image": "/images/thumbnail-project-4-large.webp"
+    "largeImage": "/images/thumbnail-project-4-large.webp",
+    "smallImage": "/images/thumbnail-project-4-small.webp"
   },
   {
     "title": "Memory Game",
     "tags": ["HTML", "CSS", "JavaScript"],
-    "image": "/images/thumbnail-project-5-large.webp"
+    "largeImage": "/images/thumbnail-project-5-large.webp",
+    "smallImage": "/images/thumbnail-project-5-small.webp"
   },
   {
     "title": "Art Gallery Showcase",
     "tags": ["HTML", "CSS", "JavaScript"],
-    "image": "/images/thumbnail-project-6-large.webp"
+    "largeImage": "/images/thumbnail-project-6-large.webp",
+    "smallImage": "/images/thumbnail-project-6-small.webp"
   }
 ]

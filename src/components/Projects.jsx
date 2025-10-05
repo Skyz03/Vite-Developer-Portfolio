@@ -20,8 +20,14 @@ function Projects() {
             <article className="group relative cursor-pointer overflow-hidden rounded bg-gray-900 shadow-lg transition-transform hover:-translate-y-2">
               <div
                 className="h-56 rounded bg-cover bg-center"
-                style={{ backgroundImage: `url(${p.image})` }}
-              ></div>
+          
+              >
+                <picture>
+                  <source media="(width < 800px)" srcset={p.smallImage}/>
+                  <source media="(width >= 800px)" srcset={p.largeImage} />
+                  <img src={p.largeImage} alt="Chris standing up holding his daughter Elva" />
+                </picture>
+              </div>
 
               {/* Hover Buttons */}
               <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 bg-black/60">
