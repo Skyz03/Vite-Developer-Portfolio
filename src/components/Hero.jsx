@@ -16,13 +16,44 @@ export default function Hero() {
 
       {/* Profile Image */}
       <div className="z-10 w-60 md:w-80">
-        <img
-          src="/images/image-profile-mobile.webp"
-          alt="Portrait of Adam Keyes"
-          width={170}
-          height={170}
-          className="mx-auto rounded-xl object-cover shadow-lg md:mx-0"
-        />
+        <picture>
+          {/* XL / Desktop and up */}
+          <source
+            srcSet="/images/image-profile-desktop.webp"
+            width={440}
+            height={440}
+            media="(min-width: 1280px)"
+          />
+          {/* LG / Laptop and up */}
+          <source
+            srcSet="/images/image-profile-desktop.webp"
+            width={400}
+            height={400}
+            media="(min-width: 1024px)"
+          />
+          {/* MD / Tablet and up */}
+          <source
+            srcSet="/images/image-profile-tablet.webp"
+            width={320}
+            height={320}
+            media="(min-width: 768px)"
+          />
+          {/* SM / Small devices and up */}
+          <source
+            srcSet="/images/image-profile-mobile.webp"
+            width={220}
+            height={220}
+            media="(min-width: 480px)"
+          />
+          {/* Default / Mobile fallback */}
+          <img
+            src="/images/image-profile-mobile.webp"
+            alt="Portrait of Adam Keyes"
+            width={170}
+            height={170}
+            className="mx-auto object-cover shadow-lg md:mx-0"
+          />
+        </picture>
       </div>
 
       {/* Text Section */}
