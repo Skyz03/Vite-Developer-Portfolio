@@ -32,10 +32,10 @@ function Projects() {
               {/* Hover Overlay */}
               <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500 bg-gradient-to-b from-transparent via-black/40 to-black/80">
                 <div className="flex flex-col gap-5">
-                  <button className="text-xs uppercase border-b-2 border-transparent pb-1 hover:border-accent hover:text-accent transition-colors duration-200">
+                  <button className=" font-bold text-xs uppercase border-b-2 border-transparent pb-1 hover:border-accent hover:text-accent transition-colors duration-200">
                     View Project
                   </button>
-                  <button className="text-xs uppercase border-b-2 border-transparent pb-1 hover:border-accent hover:text-accent transition-colors duration-200">
+                  <button className="font-bold text-xs uppercase border-b-2 border-transparent pb-1 hover:border-accent hover:text-accent transition-colors duration-200">
                     View Code
                   </button>
                 </div>
