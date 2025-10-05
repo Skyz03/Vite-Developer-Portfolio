@@ -1,20 +1,27 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('/fonts/SpaceGrotesk-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 
 @theme {
-  --font-body: 'DM Sans', sans-serif;
-  --font-heading: 'Bricolage Grotesque', sans-serif;
+  --font-space-grotesk: 'Space Grotesk', sans-serif;
 }
 
 body {
-  font-family: var(--font-body);
+  font-family: var(--font-space-grotesk);
   font-size: 18px;
 }
 
 h1,
 h2,
 h3 {
-  font-family: var(--font-heading);
+  font-family: var(--font-space-grotesk);
   font-weight: 700;
 }
 
@@ -27,9 +34,9 @@ h3 {
   --color-white: #FFFFFF;
 
   /* Light mode mappings */
-  --color-background: var(--color-white);
-  --color-foreground: var(--color-black);
-  --color-card: var(--color-white);
+  --color-background: var(--color-black);
+  --color-foreground: var(--color-white);
+  --color-card: var(--color-black);
   --color-card-foreground: var(--color-black);
   --color-popover: var(--color-white);
   --color-popover-foreground: var(--color-black);
@@ -106,5 +113,9 @@ h3 {
 
   body {
     @apply bg-background text-foreground;
+  }
+
+  .contact-button {
+    @apply text-sm tracking-widest border-b-2 border-accent pb-3 uppercase font-bold
   }
 }
