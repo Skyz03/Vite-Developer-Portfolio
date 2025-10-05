@@ -1,1 +1,110 @@
 @import "tailwindcss";
+
+
+@theme {
+  --font-body: 'DM Sans', sans-serif;
+  --font-heading: 'Bricolage Grotesque', sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: 18px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+}
+
+@theme inline {
+  /* Base palette */
+  --color-black: #151515;
+  --color-dark-gray: #242424;
+  --color-green: #4EE1A0;
+  --color-light-gray: #d9d9d9;
+  --color-white: #FFFFFF;
+
+  /* Light mode mappings */
+  --color-background: var(--color-white);
+  --color-foreground: var(--color-black);
+  --color-card: var(--color-white);
+  --color-card-foreground: var(--color-black);
+  --color-popover: var(--color-white);
+  --color-popover-foreground: var(--color-black);
+  --color-primary: var(--color-green);
+  --color-primary-foreground: var(--color-black);
+  --color-secondary: var(--color-light-gray);
+  --color-secondary-foreground: var(--color-black);
+  --color-muted: var(--color-light-gray);
+  --color-muted-foreground: var(--color-dark-gray);
+  --color-accent: var(--color-green);
+  --color-accent-foreground: var(--color-black);
+  --color-destructive: var(--color-dark-gray);
+  --color-border: var(--color-light-gray);
+  --color-input: var(--color-light-gray);
+  --color-ring: var(--color-green);
+
+  /* Radii */
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+:root {
+  --radius: 0.625rem;
+
+  /* Light mode */
+  --background: var(--color-background);
+  --foreground: var(--color-foreground);
+  --card: var(--color-card);
+  --card-foreground: var(--color-card-foreground);
+  --popover: var(--color-popover);
+  --popover-foreground: var(--color-popover-foreground);
+  --primary: var(--color-primary);
+  --primary-foreground: var(--color-primary-foreground);
+  --secondary: var(--color-secondary);
+  --secondary-foreground: var(--color-secondary-foreground);
+  --muted: var(--color-muted);
+  --muted-foreground: var(--color-muted-foreground);
+  --accent: var(--color-accent);
+  --accent-foreground: var(--color-accent-foreground);
+  --destructive: var(--color-destructive);
+  --border: var(--color-border);
+  --input: var(--color-input);
+  --ring: var(--color-ring);
+}
+
+.dark {
+  /* Dark mode */
+  --background: var(--color-black);
+  --foreground: var(--color-white);
+  --card: var(--color-dark-gray);
+  --card-foreground: var(--color-white);
+  --popover: var(--color-dark-gray);
+  --popover-foreground: var(--color-white);
+  --primary: var(--color-green);
+  --primary-foreground: var(--color-black);
+  --secondary: var(--color-dark-gray);
+  --secondary-foreground: var(--color-white);
+  --muted: var(--color-dark-gray);
+  --muted-foreground: var(--color-light-gray);
+  --accent: var(--color-green);
+  --accent-foreground: var(--color-black);
+  --destructive: var(--color-light-gray);
+  --border: var(--color-dark-gray);
+  --input: var(--color-dark-gray);
+  --ring: var(--color-green);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
