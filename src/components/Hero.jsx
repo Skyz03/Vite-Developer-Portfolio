@@ -1,11 +1,22 @@
 export default function Hero() {
   return (
     <section className="min-h-screen flex flex-col md:flex-row items-center justify-center bg-background text-foreground px-6 md:px-16 gap-10">
+      {/* Image Section */}
+      <div className="w-60 md:w-80">
+        <img
+          src="/images/image-profile-mobile.webp"
+          alt="Portrait of Adam Keyes"
+          width={170}
+          height={170}
+          className="rounded-xl object-cover shadow-lg mx-auto md:mx-0"
+        />
+      </div>
+
       <div className="text-center md:text-left max-w-xl">
-        <h1 className="text-5xl font-heading font-bold mb-2">
+        <h1 className="text-4xl font-heading font-bold mb-2">
           Nice to meet you!
         </h1>
-        <h2 className="text-5xl font-heading font-bold mb-6 text-primary">
+        <h2 className="text-4xl font-heading font-bold mb-6 text-primary">
           I'm Adam Keyes.
         </h2>
 
@@ -20,15 +31,6 @@ export default function Hero() {
         >
           Contact Me
         </a>
-      </div>
-
-      {/* Image Section */}
-      <div className="w-60 md:w-80">
-        <img
-          src="/images/image-profile-mobile.webp"
-          alt="Portrait of Adam Keyes"
-          className="rounded-xl object-cover shadow-lg"
-        />
       </div>
     </section>
   );

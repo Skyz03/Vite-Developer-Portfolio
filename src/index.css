@@ -1,20 +1,27 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('/fonts/SpaceGrotesk-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 
 @theme {
-  --font-body: 'DM Sans', sans-serif;
-  --font-heading: 'Bricolage Grotesque', sans-serif;
+  --font-space-grotesk: 'Space Grotesk', sans-serif;
 }
 
 body {
-  font-family: var(--font-body);
+  font-family: var(--font-space-grotesk);
   font-size: 18px;
 }
 
 h1,
 h2,
 h3 {
-  font-family: var(--font-heading);
+  font-family: var(--font-space-grotesk);
   font-weight: 700;
 }
 
