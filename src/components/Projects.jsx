@@ -1,10 +1,51 @@
-import React from 'react'
+import React from "react"
+import data from "../data/data.json"
 
-const Projects = () => {
+function Projects() {
   return (
-    <div>
-      <h1>project section</h1>
-    </div>
+    <section className="max-w-6xl mx-auto px-6 py-12 text-white">
+      {/* Header */}
+      <div className="flex items-center justify-between mb-8">
+        <h2 className="text-4xl font-extrabold">Projects</h2>
+        <a href="#" className="text-sm tracking-widest border-b-2 border-accent pb-1">
+          CONTACT ME
+        </a>
+      </div>
+
+      {/* Projects Grid */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
+        {data.map((p, i) => (
+          <div key={i}>
+            {/* Image + Hover Overlay */}
+            <article
+              className="group relative bg-gray-900 rounded overflow-hidden shadow-lg transition-transform hover:-translate-y-2 cursor-pointer"
+            >
+              <div
+                className="h-56 bg-cover bg-center rounded"
+                style={{ backgroundImage: `url(${p.image})` }}
+              ></div>
+
+
+              {/* Hover Buttons */}
+              <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 bg-black/60">
+                <div className="flex gap-5">
+                  <button className="text-xs uppercase border-b-2 border-transparent hover:border-accent pb-1">
+                    View Project
+                  </button>
+                  <button className="text-xs uppercase border-b-2 border-transparent hover:border-accent pb-1">
+                    View Code
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            {/* Text Outside Card */}
+            <h3 className="mt-4 font-semibold">{p.title}</h3>
+            <div className="text-xs text-gray-400 mt-1">{p.tags.join("  ·  ")}</div>
+          </div>
+        ))}
+      </div>
+    </section>
   )
 }
 

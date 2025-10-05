@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Design Portfolio",
+    "tags": ["HTML", "CSS"],
+    "image": "/images/thumbnail-project-1-large.webp"
+  },
+  {
+    "title": "E-Learning Landing Page",
+    "tags": ["HTML", "CSS"],
+    "image": "/images/thumbnail-project-2-large.webp"
+  },
+  {
+    "title": "Todo Web App",
+    "tags": ["HTML", "CSS", "JavaScript"],
+    "image": "/images/thumbnail-project-3-large.webp"
+  },
+  {
+    "title": "Entertainment Web App",
+    "tags": ["HTML", "CSS", "JavaScript"],
+    "image": "/images/thumbnail-project-4-large.webp"
+  },
+  {
+    "title": "Memory Game",
+    "tags": ["HTML", "CSS", "JavaScript"],
+    "image": "/images/thumbnail-project-5-large.webp"
+  },
+  {
+    "title": "Art Gallery Showcase",
+    "tags": ["HTML", "CSS", "JavaScript"],
+    "image": "/images/thumbnail-project-6-large.webp"
+  }
+]
