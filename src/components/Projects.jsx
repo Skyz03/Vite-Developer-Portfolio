@@ -7,7 +7,10 @@ function Projects() {
       {/* Header */}
       <div className="flex items-center justify-between mb-8">
         <h2 className="text-4xl font-extrabold">Projects</h2>
-        <a href="#" className="text-sm tracking-widest border-b-2 border-accent pb-1">
+        <a
+          href="#contact"
+          className="text-sm tracking-widest border-b-2 border-accent pb-1 hover:text-accent transition-colors"
+        >
           CONTACT ME
         </a>
       </div>
@@ -18,21 +21,21 @@ function Projects() {
           <div key={i}>
             {/* Image + Hover Overlay */}
             <article
-              className="group relative bg-gray-900 rounded overflow-hidden shadow-lg transition-transform hover:-translate-y-2 cursor-pointer"
+              className="group relative bg-gray-900 rounded overflow-hidden shadow-lg transition-transform hover:-translate-y-1 cursor-pointer"
             >
+              {/* Image */}
               <div
-                className="h-56 bg-cover bg-center rounded"
+                className="h-56 bg-cover bg-center rounded transition-all duration-500 group-hover:brightness-[0.75]"
                 style={{ backgroundImage: `url(${p.image})` }}
               ></div>
 
-
-              {/* Hover Buttons */}
-              <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 bg-black/60">
-                <div className="flex gap-5">
-                  <button className="text-xs uppercase border-b-2 border-transparent hover:border-accent pb-1">
+              {/* Hover Overlay */}
+              <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500 bg-gradient-to-b from-transparent via-black/40 to-black/80">
+                <div className="flex flex-col gap-5">
+                  <button className="text-xs uppercase border-b-2 border-transparent pb-1 hover:border-accent hover:text-accent transition-colors duration-200">
                     View Project
                   </button>
-                  <button className="text-xs uppercase border-b-2 border-transparent hover:border-accent pb-1">
+                  <button className="text-xs uppercase border-b-2 border-transparent pb-1 hover:border-accent hover:text-accent transition-colors duration-200">
                     View Code
                   </button>
                 </div>
