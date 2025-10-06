@@ -5,11 +5,13 @@ const Contact = () => {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm();
 
   const onSubmit = (data) => {
     console.log("Form submitted:", data);
+    reset()
   };
 
   return (
