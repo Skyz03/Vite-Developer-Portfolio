@@ -51,7 +51,7 @@ const Contact = () => {
         </div>
 
         {/* Email Field */}
-        <div className="flex flex-col relative">
+        {/* <div className="flex flex-col relative">
           <input
             type="email"
             placeholder="EMAIL"
@@ -68,7 +68,33 @@ const Contact = () => {
               Invalid email
             </span>
           )}
-        </div>
+        </div> */}
+        {/* Email Field */}
+<div className="flex flex-col relative">
+  <input
+    type="email"
+    placeholder="EMAIL"
+    {...register("email", {
+      required: true,
+      pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+    })}
+    className={`w-full bg-transparent border-0 border-b px-2 py-3 text-sm uppercase tracking-wide text-white placeholder-gray-400 focus:outline-none ${
+      errors.email
+        ? "border-red-500"
+        : "border-gray-500 focus:border-[rgb(78,225,160)]"
+    }`}
+  />
+
+  {/* Invalid Icon */}
+  {errors.email && (
+    <img
+      src="/images/invalid.svg"
+      alt="Invalid email"
+      className="absolute right-0 top-3 w-5 h-5"
+    />
+  )}
+</div>
+
 
         {/* Message Field */}
         <div className="flex flex-col">
