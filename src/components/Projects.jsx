@@ -3,10 +3,11 @@ import data from '../data/data.json';
 
 function Projects() {
   return (
-    <section className="mx-auto max-w-6xl px-6 py-12 text-white">
+    <section className="mx-auto max-w-6xl px-4 py-8 sm:px-6 sm:py-12 text-white">
+
       {/* Header */}
       <div className="flex items-center justify-between mb-8">
-        <h2 className="text-4xl font-extrabold">Projects</h2>
+        <h2 className="text-2xl sm:text-4xl font-extrabold">Projects</h2>
         <a href="#" className="text-sm tracking-widest border-b-2 border-accent pb-1">
           CONTACT ME
         </a>
@@ -19,14 +20,15 @@ function Projects() {
             {/* Image + Hover Overlay */}
             <article className="group relative cursor-pointer overflow-hidden rounded bg-gray-900 shadow-lg transition-transform hover:-translate-y-2">
               <div
-                className="h-56 rounded bg-cover bg-center"
-          
+                className="h-48 sm:h-56 rounded bg-cover bg-center"
+
               >
                 <picture>
-                  <source media="(width < 800px)" srcset={p.smallImage}/>
-                  <source media="(width >= 800px)" srcset={p.largeImage} />
-                  <img src={p.largeImage} alt="Chris standing up holding his daughter Elva" />
+                  <source media="(max-width: 799px)" srcSet={p.smallImage} />
+                  <source media="(min-width: 800px)" srcSet={p.largeImage} />
+                  <img src={p.largeImage} alt={p.title} className="w-full h-56 object-cover rounded" />
                 </picture>
+
               </div>
 
               {/* Hover Buttons */}
@@ -44,7 +46,7 @@ function Projects() {
 
             {/* Text Outside Card */}
             <h3 className="mt-4 font-semibold">{p.title}</h3>
-            <div className="mt-1 text-xs text-gray-400">{p.tags.join('  ·  ')}</div>
+            <div className="mt-0.5 text-xs text-gray-400">{p.tags.join('  ·  ')}</div>
           </div>
         ))}
       </div>
