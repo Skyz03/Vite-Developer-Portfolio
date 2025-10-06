@@ -16,7 +16,7 @@ const Contact = () => {
 
   return (
     <section className="relative flex flex-col items-center justify-center bg-[rgb(36,36,36)] px-6 py-16 text-center md:flex-row md:items-start md:text-left md:px-16 md:py-24">
-      
+
       <img
         src="/images/pattern-rings.svg"
         alt=""
@@ -44,14 +44,15 @@ const Contact = () => {
             type="text"
             placeholder="NAME"
             {...register("name", { required: true })}
-            className={`w-full bg-transparent border-0 border-b px-2 py-3 text-sm uppercase tracking-wide text-white placeholder-gray-400 focus:outline-none ${
-              errors.name ? "border-red-500" : "border-gray-500 focus:border-[rgb(78,225,160)]"
-            }`}
+            className={`w-full bg-transparent border-0 border-b px-2 py-3 text-sm uppercase tracking-wide text-white placeholder-gray-400 focus:outline-none ${errors.name ?
+                "border-[rgba(255,111,91,1)]"
+                : "border-gray-500 focus:border-[rgb(78,225,160)]"
+              }`}
           />
         </div>
 
         {/* Email Field */}
-        {/* <div className="flex flex-col relative">
+        <div className="flex flex-col relative">
           <input
             type="email"
             placeholder="EMAIL"
@@ -59,41 +60,22 @@ const Contact = () => {
               required: true,
               pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
             })}
-            className={`w-full bg-transparent border-0 border-b px-2 py-3 text-sm uppercase tracking-wide text-white placeholder-gray-400 focus:outline-none ${
-              errors.email ? "border-red-500" : "border-gray-500 focus:border-[rgb(78,225,160)]"
-            }`}
-          />
-          {errors.email && (
-            <span className="absolute right-0 top-3 text-red-500 text-xs italic">
-              Invalid email
-            </span>
-          )}
-        </div> */}
-        {/* Email Field */}
-<div className="flex flex-col relative">
-  <input
-    type="email"
-    placeholder="EMAIL"
-    {...register("email", {
-      required: true,
-      pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
-    })}
-    className={`w-full bg-transparent border-0 border-b px-2 py-3 text-sm uppercase tracking-wide text-white placeholder-gray-400 focus:outline-none ${
-      errors.email
-        ? "border-red-500"
-        : "border-gray-500 focus:border-[rgb(78,225,160)]"
-    }`}
-  />
+            className={`w-full bg-transparent border-0 border-b px-2 py-3 text-sm uppercase tracking-wide text-white placeholder-gray-400 focus:outline-none ${errors.email
+                ? "border-[rgba(255,111,91,1)]"
 
-  {/* Invalid Icon */}
-  {errors.email && (
-    <img
-      src="/images/invalid.svg"
-      alt="Invalid email"
-      className="absolute right-0 top-3 w-5 h-5"
-    />
-  )}
-</div>
+                : "border-gray-500 focus:border-[rgb(78,225,160)]"
+              }`}
+          />
+
+          {/* Invalid Icon */}
+          {errors.email && (
+            <img
+              src="/images/invalid.svg"
+              alt="Invalid email"
+              className="absolute right-0 top-3 w-5 h-5"
+            />
+          )}
+        </div>
 
 
         {/* Message Field */}
@@ -102,9 +84,8 @@ const Contact = () => {
             placeholder="MESSAGE"
             rows="3"
             {...register("message", { required: true })}
-            className={`w-full bg-transparent resize-none border-0 border-b px-2 py-3 text-sm uppercase tracking-wide text-white placeholder-gray-400 focus:outline-none ${
-              errors.message ? "border-red-500" : "border-gray-500 focus:border-[rgb(78,225,160)]"
-            }`}
+            className={`w-full bg-transparent resize-none border-0 border-b px-2 py-3 text-sm uppercase tracking-wide text-white placeholder-gray-400 focus:outline-none ${errors.message ? "border-[rgba(255,111,91,1)]" : "border-gray-500 focus:border-[rgb(78,225,160)]"
+              }`}
           ></textarea>
         </div>
 
