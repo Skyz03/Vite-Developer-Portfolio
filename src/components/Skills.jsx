@@ -1,18 +1,18 @@
-import React from 'react';
-import patternImage from '/images/pattern-rings.svg';
+import React from "react";
+import patternImage from "/images/pattern-rings.svg";
 
 function Skills() {
   const items = [
-    ['HTML', '4 Years Experience'],
-    ['CSS', '4 Years Experience'],
-    ['Javascript', '4 Years Experience'],
-    ['Accessibility', '4 Years Experience'],
-    ['React', '3 Years Experience'],
-    ['Sass', '3 Years Experience'],
+    ["HTML", "4 Years Experience"],
+    ["CSS", "4 Years Experience"],
+    ["Javascript", "4 Years Experience"],
+    ["Accessibility", "4 Years Experience"],
+    ["React", "3 Years Experience"],
+    ["Sass", "3 Years Experience"],
   ];
 
   return (
-    <section className="relative mx-auto max-w-6xl overflow-hidden px-6 py-16 text-white">
+    <section className="relative mx-auto max-w-7xl overflow-hidden px-6 py-16 text-white md:mx-0 md:px-0">
       {/* Background pattern image */}
       <img
         src={patternImage}
