@@ -23,7 +23,7 @@ const socialIcons = [
 
 export default function Navigation() {
   return (
-    <nav className="mx-auto flex flex-col items-center justify-center px-6 py-8 text-white md:flex-row md:items-center md:justify-between md:px-0">
+    <nav className="mx-auto flex flex-col items-center justify-center px-6 py-4 text-white md:flex-row md:items-center md:justify-between md:px-0 md:py-8">
       {/* Logo */}
       <div className="mb-4 text-xl md:mb-0">adamkeyes</div>
 

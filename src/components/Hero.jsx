@@ -30,7 +30,7 @@ export default function Hero() {
             <img
               src="/images/image-profile-mobile.webp"
               alt="Portrait of Adam Keyes"
-              className="mx-auto h-full w-full object-cover shadow-lg md:mx-0"
+              className="mx-auto h-full w-[80%] object-cover shadow-lg md:mx-0"
             />
           </picture>
         </div>
@@ -45,7 +45,7 @@ export default function Hero() {
             </span>
           </h1>
 
-          <p className="mb-8 text-sm md:text-base">
+          <p className="text-light-gray mb-4 px-4 text-sm md:px-0 md:text-base">
             Based in the UK, I’m a front-end developer passionate about building
             accessible web apps that users love.
           </p>

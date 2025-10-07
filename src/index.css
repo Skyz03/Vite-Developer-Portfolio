@@ -116,6 +116,6 @@ h3 {
   }
 
   .contact-button {
-    @apply text-sm tracking-widest border-b-2 border-accent pb-3 uppercase font-bold
+    @apply text-sm tracking-widest border-b-2 border-accent pb-3 uppercase
   }
 }
