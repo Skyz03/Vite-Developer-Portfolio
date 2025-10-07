@@ -23,9 +23,9 @@ const socialIcons = [
 
 export default function Navigation() {
   return (
-    <nav className="mx-auto flex flex-col items-center justify-center px-6 py-8 text-white md:px-0">
+    <nav className="mx-auto flex flex-col items-center justify-center px-6 py-8 text-white md:flex-row md:items-center md:justify-between md:px-0">
       {/* Logo */}
-      <div className="mb-4 text-xl">adamkeyes</div>
+      <div className="mb-4 text-xl md:mb-0">adamkeyes</div>
 
       {/* Social Icons */}
       <div className="flex justify-center gap-6">

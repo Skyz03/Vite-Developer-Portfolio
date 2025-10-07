@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="relative flex min-h-screen w-screen flex-col items-center justify-center gap-10 overflow-hidden px-6 md:min-h-auto md:flex-row-reverse md:items-start md:justify-between md:gap-4 md:px-4">
+    <section className="relative flex min-h-auto w-auto flex-col items-center justify-center gap-10 overflow-hidden md:min-h-auto md:flex-row-reverse md:items-start md:justify-between md:gap-4">
       {/* Background Patterns */}
       <img
         src="/images/pattern-rings.svg"
@@ -15,9 +15,9 @@ export default function Hero() {
       />
 
       {/* Profile + Text Container */}
-      <div className="z-10 flex w-screen flex-col items-center md:mx-auto md:w-auto md:flex-row-reverse md:gap-3.5">
+      <div className="z-10 flex w-screen flex-col items-center md:w-full md:flex-row-reverse md:justify-between md:gap-20">
         {/* Profile Image */}
-        <div className="w-48">
+        <div className="w-48 md:w-80">
           <picture>
             <source
               srcSet="/images/image-profile-desktop.webp"
