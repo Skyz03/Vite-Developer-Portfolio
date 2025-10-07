@@ -43,11 +43,10 @@ const Contact = () => {
             type="text"
             placeholder="NAME"
             {...register("name", { required: true })}
-            className={`w-full border-0 border-b bg-transparent px-2 py-3 text-sm tracking-wide text-white uppercase placeholder-gray-400 focus:outline-none ${
-              errors.name
-                ? "border-[rgba(255,111,91,1)]"
-                : "border-gray-500 focus:border-[rgb(78,225,160)]"
-            }`}
+            className={`w-full border-0 border-b bg-transparent px-2 py-3 text-sm tracking-wide text-white uppercase placeholder-gray-400 focus:outline-none ${errors.name
+              ? "border-[rgba(255,111,91,1)]"
+              : "border-gray-500 focus:border-[rgb(78,225,160)]"
+              }`}
           />
         </div>
 
@@ -60,11 +59,10 @@ const Contact = () => {
               required: true,
               pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
             })}
-            className={`w-full border-0 border-b bg-transparent px-2 py-3 text-sm tracking-wide text-white uppercase placeholder-gray-400 focus:outline-none ${
-              errors.email
-                ? "border-[rgba(255,111,91,1)]"
-                : "border-gray-500 focus:border-[rgb(78,225,160)]"
-            }`}
+            className={`w-full border-0 border-b bg-transparent px-2 py-3 text-sm tracking-wide text-white uppercase placeholder-gray-400 focus:outline-none ${errors.email
+              ? "border-[rgba(255,111,91,1)]"
+              : "border-gray-500 focus:border-[rgb(78,225,160)]"
+              }`}
           />
 
           {/* Invalid Icon */}
@@ -75,6 +73,12 @@ const Contact = () => {
               className="absolute top-3 right-0 h-5 w-5"
             />
           )}
+          {/* Error Text */}
+          {errors.email && (
+            <p className="absolute -bottom-5 right-0 text-[11px] text-[rgba(255,111,91,1)]">
+              Sorry, invalid format here
+            </p>
+          )}
         </div>
 
         {/* Message Field */}
@@ -83,11 +87,10 @@ const Contact = () => {
             placeholder="MESSAGE"
             rows="3"
             {...register("message", { required: true })}
-            className={`w-full resize-none border-0 border-b bg-transparent px-2 py-3 text-sm tracking-wide text-white uppercase placeholder-gray-400 focus:outline-none ${
-              errors.message
-                ? "border-[rgba(255,111,91,1)]"
-                : "border-gray-500 focus:border-[rgb(78,225,160)]"
-            }`}
+            className={`w-full resize-none border-0 border-b bg-transparent px-2 py-3 text-sm tracking-wide text-white uppercase placeholder-gray-400 focus:outline-none ${errors.message
+              ? "border-[rgba(255,111,91,1)]"
+              : "border-gray-500 focus:border-[rgb(78,225,160)]"
+              }`}
           ></textarea>
         </div>
 
