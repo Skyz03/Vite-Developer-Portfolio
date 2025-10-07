@@ -14,7 +14,10 @@ function App() {
         <Skills />
         <Projects />
       </div>
-      <Contact />
+      <div className="bg-dark-gray">
+        <Contact />
+        <Nav />
+      </div>
     </div>
   );
 }

@@ -12,7 +12,7 @@ function Skills() {
   ];
 
   return (
-    <section className="relative mx-auto max-w-7xl overflow-hidden px-6 py-16 text-white md:mx-0 md:px-0">
+    <section className="relative mx-auto max-w-7xl overflow-hidden px-6 py-10 text-white md:mx-0 md:px-0 md:py-16">
       {/* Background pattern image */}
       <img
         src={patternImage}
@@ -21,7 +21,7 @@ function Skills() {
       />
 
       {/* Skills grid */}
-      <div className="relative z-10 border-t border-gray-800 pt-10">
+      <div className="border-light-gray relative z-10 border-t pt-10">
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3">
           {items.map((it, idx) => (
             <div
@@ -37,7 +37,7 @@ function Skills() {
         </div>
 
         {/* Horizontal line (mobile only) */}
-        <hr className="relative z-10 mt-10 border-gray-800 md:hidden" />
+        <hr className="border-light-gray relative z-10 mt-10 md:hidden" />
       </div>
     </section>
   );

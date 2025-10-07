@@ -15,7 +15,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="relative flex flex-col items-center justify-center bg-[rgb(36,36,36)] px-6 py-16 text-center md:flex-row md:items-start md:justify-between md:px-32 md:py-24 md:text-left">
+    <section className="relative flex flex-col items-center justify-center px-6 py-16 text-center md:flex-row md:items-start md:justify-between md:px-32 md:py-24 md:text-left">
       <img
         src="/images/pattern-rings.svg"
         alt=""

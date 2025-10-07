@@ -1,17 +1,17 @@
 export default function Hero() {
   return (
-    <section className="relative flex min-h-auto w-auto flex-col items-center justify-center gap-10 overflow-hidden md:min-h-auto md:flex-row-reverse md:items-start md:justify-between md:gap-4">
+    <section className="relative flex min-h-auto w-auto flex-col items-center justify-center gap-10 overflow-hidden py-4 md:min-h-auto md:flex-row-reverse md:items-start md:justify-between md:gap-4 md:py-0">
       {/* Background Patterns */}
       <img
         src="/images/pattern-rings.svg"
         alt=""
-        className="pointer-events-none absolute top-1/5 -left-1/2 w-96 md:w-60"
+        className="pointer-events-none absolute top-0 -left-1/2 w-96 md:w-60"
       />
 
       <img
         src="/images/pattern-circle.svg"
         alt=""
-        className="pointer-events-none absolute top-1/2 -right-1/5 w-32 -translate-y-1/2 md:w-48"
+        className="pointer-events-none absolute top-1/3 -right-1/6 w-32 -translate-y-1/2 md:w-48"
       />
 
       {/* Profile + Text Container */}
