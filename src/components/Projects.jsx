@@ -7,10 +7,7 @@ function Projects() {
       {/* Header */}
       <div className="mb-8 flex items-center justify-between">
         <h2 className="text-2xl font-extrabold sm:text-4xl">Projects</h2>
-        <a
-          href="#"
-          className="border-accent border-b-2 pb-1 text-sm tracking-widest"
-        >
+        <a href="#" className="contact-button">
           CONTACT ME
         </a>
       </div>
@@ -46,19 +43,15 @@ function Projects() {
             </article>
 
             {/* Title and Tags */}
-            <h3 className="mt-4 font-semibold">{p.title}</h3>
-            <div className="mt-0.5 text-xs text-gray-400">
+            <h3 className="mt-4 font-semibold uppercase">{p.title}</h3>
+            <div className="mt-0.5 text-sm text-gray-400">
               {p.tags.join("  ·  ")}
             </div>
 
             {/* Buttons  for Mobile/Tablet */}
             <div className="mt-3 flex gap-2 md:hidden">
-              <button className="border-accent border-b-2 pb-1 text-xs uppercase">
-                View Project
-              </button>
-              <button className="border-accent border-b-2 pb-1 text-xs uppercase">
-                View Code
-              </button>
+              <button className="contact-button">View Project</button>
+              <button className="contact-button">View Code</button>
             </div>
           </div>
         ))}
