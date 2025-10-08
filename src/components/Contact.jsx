@@ -22,7 +22,7 @@ const Contact = () => {
         className="pointer-events-none absolute bottom-30 -left-50 min-w-lvw opacity-100 md:w-60"
       />
 
-      <div className="mx-auto flex w-full max-w-6xl flex-col items-center justify-center border-b border-gray-600 pb-14 md:flex-row md:items-start md:justify-between">
+      <div className="mx-auto flex w-full max-w-6xl flex-col items-center justify-center border-b border-gray-600 pb-13 md:flex-row md:items-start md:justify-between">
 
         {/* Left Text Section */}
         <div className="mb-10 max-w-md md:mr-12 md:mb-0">
