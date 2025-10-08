@@ -42,7 +42,7 @@ function Skills() {
         <img
           src="/images/pattern-rings.svg"
           alt=""
-          className="pointer-events-none absolute -right-60 -bottom-10 min-w-lvw opacity-100 md:w-60"
+          className="pointer-events-none absolute right-[-10vw] bottom-[-5vw] w-[60vw] max-w-[600px] opacity-100 sm:w-[40vw] md:w-[30vw] lg:w-[20vw]"
         />
       </div>
     </section>

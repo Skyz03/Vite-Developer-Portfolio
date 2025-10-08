@@ -19,11 +19,10 @@ const Contact = () => {
       <img
         src="/images/pattern-rings.svg"
         alt=""
-        className="pointer-events-none absolute bottom-30 -left-50 min-w-lvw opacity-100 md:w-60"
+        className="pointer-events-none absolute bottom-[-5vw] left-[-10vw] w-[60vw] max-w-[600px] opacity-100 sm:w-[45vw] md:bottom-[20vw] md:w-[30vw] lg:w-[20vw]"
       />
 
       <div className="mx-auto flex w-full max-w-6xl flex-col items-center justify-center border-b border-gray-600 pb-13 md:flex-row md:items-start md:justify-between">
-
         {/* Left Text Section */}
         <div className="mb-10 max-w-md md:mr-12 md:mb-0">
           <h2 className="mb-4 text-3xl font-bold text-white">Contact</h2>
