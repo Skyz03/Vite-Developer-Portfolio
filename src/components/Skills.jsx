@@ -38,6 +38,12 @@ function Skills() {
 
         {/* Horizontal line (mobile only) */}
         <hr className="border-light-gray relative z-10 mt-10 md:hidden" />
+
+        <img
+          src="/images/pattern-rings.svg"
+          alt=""
+          className="pointer-events-none absolute -right-60 -bottom-10 min-w-lvw opacity-100 md:w-60"
+        />
       </div>
     </section>
   );

@@ -15,10 +15,14 @@ const Contact = () => {
   };
 
   return (
-    <section className="relative px-6 py-16 text-center  md:px-32 md:py-24 md:text-left">
+    <section className="relative px-6 py-16 text-center md:px-32 md:py-24 md:text-left">
+      <img
+        src="/images/pattern-rings.svg"
+        alt=""
+        className="pointer-events-none absolute bottom-30 -left-50 min-w-lvw opacity-100 md:w-60"
+      />
 
-      <div className="w-full max-w-6xl flex flex-col items-center justify-center border-b border-gray-600 pb-8 mx-auto md:flex-row md:items-start md:justify-between">
-
+      <div className="mx-auto flex w-full max-w-6xl flex-col items-center justify-center border-b border-gray-600 pb-8 md:flex-row md:items-start md:justify-between">
         <img
           src="/images/pattern-rings.svg"
           alt=""
@@ -46,10 +50,11 @@ const Contact = () => {
               type="text"
               placeholder="NAME"
               {...register("name", { required: true })}
-              className={`w-full border-0 border-b bg-transparent px-2 py-3 text-sm tracking-wide text-white uppercase placeholder-gray-400 focus:outline-none ${errors.name
-                ? "border-[rgba(255,111,91,1)]"
-                : "border-gray-500 focus:border-[rgb(78,225,160)]"
-                }`}
+              className={`w-full border-0 border-b bg-transparent px-2 py-3 text-sm tracking-wide text-white uppercase placeholder-gray-400 focus:outline-none ${
+                errors.name
+                  ? "border-[rgba(255,111,91,1)]"
+                  : "border-gray-500 focus:border-[rgb(78,225,160)]"
+              }`}
             />
           </div>
 
@@ -62,10 +67,11 @@ const Contact = () => {
                 required: true,
                 pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
               })}
-              className={`w-full border-0 border-b bg-transparent px-2 py-3 text-sm tracking-wide text-white uppercase placeholder-gray-400 focus:outline-none ${errors.email
-                ? "border-[rgba(255,111,91,1)]"
-                : "border-gray-500 focus:border-[rgb(78,225,160)]"
-                }`}
+              className={`w-full border-0 border-b bg-transparent px-2 py-3 text-sm tracking-wide text-white uppercase placeholder-gray-400 focus:outline-none ${
+                errors.email
+                  ? "border-[rgba(255,111,91,1)]"
+                  : "border-gray-500 focus:border-[rgb(78,225,160)]"
+              }`}
             />
 
             {/* Invalid Icon */}
@@ -78,7 +84,7 @@ const Contact = () => {
             )}
             {/* Error Text */}
             {errors.email && (
-              <p className="absolute -bottom-5 right-0 text-[11px] text-[rgba(255,111,91,1)]">
+              <p className="absolute right-0 -bottom-5 text-[11px] text-[rgba(255,111,91,1)]">
                 Sorry, invalid format here
               </p>
             )}
@@ -90,10 +96,11 @@ const Contact = () => {
               placeholder="MESSAGE"
               rows="3"
               {...register("message", { required: true })}
-              className={`w-full resize-none border-0 border-b bg-transparent px-2 py-3 text-sm tracking-wide text-white uppercase placeholder-gray-400 focus:outline-none ${errors.message
-                ? "border-[rgba(255,111,91,1)]"
-                : "border-gray-500 focus:border-[rgb(78,225,160)]"
-                }`}
+              className={`w-full resize-none border-0 border-b bg-transparent px-2 py-3 text-sm tracking-wide text-white uppercase placeholder-gray-400 focus:outline-none ${
+                errors.message
+                  ? "border-[rgba(255,111,91,1)]"
+                  : "border-gray-500 focus:border-[rgb(78,225,160)]"
+              }`}
             ></textarea>
           </div>
 
@@ -108,7 +115,6 @@ const Contact = () => {
           </div>
         </form>
       </div>
-
     </section>
   );
 };
