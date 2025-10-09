@@ -12,7 +12,7 @@ function Skills() {
   ];
 
   return (
-    <section className="relative mx-auto max-w-7xl overflow-hidden px-6 py-10 text-white md:mx-0 md:px-0 md:py-16">
+    <section className="relative mx-auto max-w-7xl px-6 py-10 text-white md:mx-0 md:px-0 md:py-16">
       {/* Background pattern image */}
       <img
         src={patternImage}
@@ -22,7 +22,7 @@ function Skills() {
 
       {/* Skills grid */}
       <div className="border-light-gray relative z-10 border-t pt-10">
-        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3">
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-2">
           {items.map((it, idx) => (
             <div
               key={idx}

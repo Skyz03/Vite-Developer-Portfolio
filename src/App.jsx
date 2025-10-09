@@ -8,7 +8,7 @@ function App() {
   return (
     // Added whole div with bg color and margin for larger screens
     <div className="bg-background">
-      <div className="md:mx-32">
+      <div className="md:mx-10">
         <Nav />
         <Hero />
         <Skills />
