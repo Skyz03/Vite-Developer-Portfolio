@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="relative flex min-h-auto w-auto flex-col items-center justify-center gap-10 overflow-hidden py-4 md:min-h-auto md:flex-row-reverse md:items-start md:justify-between md:gap-4 md:py-0">
+    <section className="relative flex min-h-auto w-auto flex-col items-center justify-center gap-10 overflow-visible py-4 md:min-h-auto md:flex-row-reverse md:items-start md:justify-between md:gap-4 md:py-0">
       {/* Background Patterns */}
       <img
         src="/images/pattern-rings.svg"
@@ -15,9 +15,9 @@ export default function Hero() {
       />
 
       {/* Profile + Text Container */}
-      <div className="z-10 flex w-screen flex-col items-center md:w-full md:flex-row-reverse md:justify-between md:gap-20">
+      <div className="z-10 flex w-screen flex-col items-center md:z-1 md:w-full md:flex-row-reverse md:justify-between md:gap-20">
         {/* Profile Image */}
-        <div className="w-48 md:w-80">
+        <div className="w-48 md:-mr-10 md:h-lvh md:w-80 md:flex-2">
           <picture>
             <source
               srcSet="/images/image-profile-desktop.webp"
@@ -30,13 +30,13 @@ export default function Hero() {
             <img
               src="/images/image-profile-mobile.webp"
               alt="Portrait of Adam Keyes"
-              className="mx-auto h-full w-[80%] object-cover shadow-lg md:mx-0"
+              className="mx-auto h-auto w-[80%] object-cover shadow-lg md:-z-10 md:mx-0 md:-mt-40 md:-mr-10 md:h-auto md:w-auto"
             />
           </picture>
         </div>
 
         {/* Text Section */}
-        <div className="my-4 max-w-xl text-center md:text-left">
+        <div className="my-4 max-w-xl text-center md:flex-1 md:text-left">
           <h1 className="font-heading relative mb-6 text-4xl font-bold md:text-7xl">
             <span className="block md:inline">Nice to meet you!</span>{" "}
             <span className="block md:inline">
