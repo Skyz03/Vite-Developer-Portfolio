@@ -15,9 +15,9 @@ export default function Hero() {
       />
 
       {/* Profile + Text Container */}
-      <div className="z-10 flex w-screen flex-col items-center md:z-1 md:w-full md:flex-row-reverse md:justify-between md:gap-0">
+      <div className="z-10 flex w-screen flex-col items-center md:z-1 md:w-full md:flex-row-reverse md:items-start md:justify-between md:gap-0">
         {/* Profile Image */}
-        <div className="w-48 md:-mr-10 md:h-lvh md:w-80 md:flex-1">
+        <div className="w-48 md:-mr-10 md:w-80 md:flex-1">
           <picture>
             <source
               srcSet="/images/image-profile-desktop.webp"
@@ -30,7 +30,7 @@ export default function Hero() {
             <img
               src="/images/image-profile-mobile.webp"
               alt="Portrait of Adam Keyes"
-              className="md: ] mx-auto h-auto w-[80%] object-cover shadow-lg md:-z-10 md:mx-0 md:-mt-30 md:ml-auto"
+              className="mx-auto h-auto w-[80%] object-cover shadow-lg md:-z-10 md:mx-0 md:-mt-30 md:ml-auto"
             />
           </picture>
         </div>
