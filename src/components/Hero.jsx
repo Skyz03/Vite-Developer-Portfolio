@@ -30,14 +30,14 @@ export default function Hero() {
             <img
               src="/images/image-profile-mobile.webp"
               alt="Portrait of Adam Keyes"
-              className="mx-auto h-auto w-[80%] object-cover shadow-lg md:-z-10 md:mx-0 md:-mt-40 md:ml-auto"
+              className="md: ] mx-auto h-auto w-[80%] object-cover shadow-lg md:-z-10 md:mx-0 md:-mt-30 md:ml-auto"
             />
           </picture>
         </div>
 
         {/* Text Section */}
-        <div className="my-4 max-w-xl text-center md:mr-[-8rem] md:w-auto md:flex-1 md:text-left">
-          <h1 className="font-heading relative mb-6 text-4xl font-bold md:text-[68px]">
+        <div className="z-10 my-4 max-w-xl text-center md:mr-[-8rem] md:w-auto md:flex-1 md:text-left">
+          <h1 className="font-heading relative mb-6 text-4xl font-bold md:text-7xl">
             <span className="block md:inline">Nice to meet you!</span>{" "}
             <span className="block md:inline">
               I'm{" "}
