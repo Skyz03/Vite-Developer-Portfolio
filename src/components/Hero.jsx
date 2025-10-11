@@ -15,9 +15,9 @@ export default function Hero() {
       />
 
       {/* Profile + Text Container */}
-      <div className="z-10 flex w-screen flex-col items-center md:z-1 md:w-full md:flex-row-reverse md:justify-between md:gap-20">
+      <div className="z-10 flex w-screen flex-col items-center md:z-1 md:w-full md:flex-row-reverse md:justify-between md:gap-0">
         {/* Profile Image */}
-        <div className="w-48 md:-mr-10 md:h-lvh md:w-80 md:flex-2">
+        <div className="w-48 md:-mr-10 md:h-lvh md:w-80 md:flex-1">
           <picture>
             <source
               srcSet="/images/image-profile-desktop.webp"
@@ -30,14 +30,14 @@ export default function Hero() {
             <img
               src="/images/image-profile-mobile.webp"
               alt="Portrait of Adam Keyes"
-              className="mx-auto h-auto w-[80%] object-cover shadow-lg md:-z-10 md:mx-0 md:-mt-40 md:-mr-10 md:h-auto md:w-auto"
+              className="mx-auto h-auto w-[80%] object-cover shadow-lg md:-z-10 md:mx-0 md:-mt-40 md:ml-auto"
             />
           </picture>
         </div>
 
         {/* Text Section */}
-        <div className="my-4 max-w-xl text-center md:flex-1 md:text-left">
-          <h1 className="font-heading relative mb-6 text-4xl font-bold md:text-7xl">
+        <div className="my-4 max-w-xl text-center md:mr-[-8rem] md:w-auto md:flex-1 md:text-left">
+          <h1 className="font-heading relative mb-6 text-4xl font-bold md:text-[68px]">
             <span className="block md:inline">Nice to meet you!</span>{" "}
             <span className="block md:inline">
               I'm{" "}
