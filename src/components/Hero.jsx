@@ -36,16 +36,18 @@ export default function Hero() {
         </div>
 
         {/* Text Section */}
-        <div className="z-10 my-4 max-w-xl text-center md:mr-[-8rem] md:w-auto md:flex-1 md:text-left">
-          <h1 className="font-heading relative mb-6 text-4xl font-bold md:text-7xl">
-            <span className="block md:inline">Nice to meet you!</span>{" "}
+        <div className="z-10 my-4 max-w-xl text-center md:mr-[-12rem] md:w-auto md:flex-1 md:text-left">
+          <h1 className="font-heading relative mb-6 text-4xl font-bold md:text-6xl md:leading-tight">
+            <span className="block md:inline">
+              Nice to <br /> meet you!
+            </span>{" "}
             <span className="block md:inline">
               I'm{" "}
               <span className="decoration-accent underline">Adam Keyes</span>.
             </span>
           </h1>
 
-          <p className="text-light-gray mb-4 px-4 text-sm md:px-0 md:text-base">
+          <p className="text-light-gray mb-4 px-4 text-sm md:mr-[4rem] md:px-0 md:text-base">
             Based in the UK, I’m a front-end developer passionate about building
             accessible web apps that users love.
           </p>
